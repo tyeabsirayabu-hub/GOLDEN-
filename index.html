@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Honey & Gold Chips | NUUF TRADING</title>
+    <meta name="description" content="Discover Golden Honey and Gold Chips by NUUF TRADING, a food manufacturing company in Addis Ababa, Ethiopia.">
+
+    <style>
+        /* ===== 1. COLORS AND RESET ===== */
+        :root {
+            --black: #0A0A0A;
+            --gold: #D4A017;
+            --amber: #F4B400;
+            --honey: #A65A14;
+            --white: #FFFFFF;
+            --cream: #F8F4EC;
+            --text: #444444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 20px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ===== 2. HEADER AND NAVIGATION ===== */
+        header {
+            background: var(--black);
+            padding: 20px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            color: var(--gold);
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 18px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            color: var(--gold);
+        }
+
+        /* ===== 3. HERO SECTION ===== */
+        .hero {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 110px 20px;
+        }
+
+        .hero h1 {
+            color: var(--amber);
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        /* ===== 4. GENERAL SECTIONS ===== */
+        section {
+            padding: 70px 0;
+        }
+
+        .white {
+            background: var(--white);
+        }
+
+        .cream {
+            background: var(--cream);
+        }
+
+        h2 {
+            color: var(--honey);
+            text-align: center;
+            font-size: clamp(28px, 4vw, 38px);
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--honey);
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: var(--honey);
+            margin: 20px 0 10px;
+        }
+
+        p {
+            font-size: 17px;
+            margin-bottom: 18px;
+        }
+
+        strong {
+            color: var(--honey);
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== 5. CARDS AND GRIDS ===== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(min(100%, 280px), 1fr)
+            );
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card ul {
+            padding-left: 22px;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+        }
+
+        .card li:last-child {
+            margin-bottom: 0;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== 6. CONTACT LINKS ===== */
+        .contact-link {
+            color: var(--honey);
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== 7. FOOTER ===== */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        footer span {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* ===== 8. RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="#welcome" class="logo">
+                
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="#welcome">Home</a>
+                <a href="#about">About</a>
+                <a href="#mission">Mission</a>
+                <a href="#vision">Vision</a>
+                <a href="#quality">Quality</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Golden Honey &amp; Gold Chips</h1>
+            <p>
+                Quality &bull; Freshness &bull; Food Safety
+                &bull; Customer Satisfaction
+            </p>
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="welcome" class="cream">
+        <div class="container">
+            <h2>Welcome to Our Company</h2>
+
+            <p>
+                Welcome to <strong>Golden Honey &amp; Gold Chips</strong>,
+                a food brand of NUUF TRADING. We are committed to producing
+                honey and snack products with a focus on quality, food safety,
+                and customer satisfaction.
+            </p>
+
+            <p>
+                Through responsible production practices and continuous
+                improvement, we aim to deliver reliable products that our
+                customers can enjoy and trust.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="white">
+        <div class="container">
+            <h2>About Us</h2>
+
+            <p>
+                We are a food manufacturing company focused on honey
+                processing and potato chips production. Our goal is to
+                provide products that combine good taste, consistent quality,
+                and safe handling.
+            </p>
+
+            <p>
+                We value honesty, innovation, teamwork, and continuous
+                improvement. We work to meet customer needs while creating
+                long-term value for our customers, employees, and community.
+            </p>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section id="mission" class="cream">
+        <div class="container">
+            <h2>Our Mission</h2>
+
+            <p>
+                Our mission is to produce and deliver safe, high-quality
+                food products that meet customer expectations and applicable
+                food safety requirements.
+            </p>
+
+            <p>
+                We are committed to responsible sourcing, hygienic
+                production, quality control, and continuous improvement
+                throughout our operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision" class="white">
+        <div class="container">
+            <h2>Our Vision</h2>
+
+            <p>
+                To become a respected and trusted food brand in Ethiopia
+                and international markets by providing quality products,
+                maintaining high food safety standards, and building lasting
+                relationships with our customers.
+            </p>
+        </div>
+    </section>
+
+    <!-- QUALITY -->
+    <section id="quality" class="cream">
+        <div class="container">
+            <h2>Quality &amp; Food Safety</h2>
+
+            <p>
+                At Golden Honey Foods Industry, quality and food safety
+                are essential to our production operations. We focus on
+                hygienic processing, proper packaging, safe storage,
+                and consistent product quality.
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Quality Standards</h3>
+
+                    <ul>
+                        <li>
+                            <strong>HACCP:</strong>
+                            Identifying and controlling food safety hazards.
+                        </li>
+                        <li>
+                            <strong>GMP:</strong>
+                            Good Manufacturing Practices for hygienic production.
+                        </li>
+                        <li>
+                            <strong>ISO 22000:</strong>
+                            A framework for food safety management systems.
+                        </li>
+                        <li>
+                            <strong>Quality Control:</strong>
+                            Checking raw materials, processing, packaging,
+                            and finished products.
+                        </li>
+                        <li>
+                            <strong>Food Safety:</strong>
+                            Proper handling, cleaning, and storage procedures.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Our Commitment</h3>
+
+                    <p>
+                        We aim to provide products that meet defined quality
+                        requirements and applicable food safety regulations.
+                    </p>
+
+                    <p>
+                        We are committed to improving our processes and
+                        strengthening customer trust through responsible
+                        manufacturing practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS AND SERVICES -->
+    <section id="products" class="white">
+        <div class="container">
+            <h2>Our Products &amp; Services</h2>
+
+            <p>
+                Discover our honey products, crispy potato chips,
+                and food manufacturing services.
+            </p>
+
+            <div class="grid">
+                <!-- HONEY -->
+                <div class="card">
+                    <h3>🍯 Golden Honey</h3>
+
+                    <p>
+                        We process, filter, and package honey in a range
+                        of sizes for different customer needs.
+                    </p>
+
+                    <h4>Available Sizes</h4>
+
+                    <ul>
+                        <li>100 g Honey Bottle</li>
+                        <li>500 g Honey Bottle</li>
+                        <li>500 g Premium Honey</li>
+                        <li>500 g Squeeze Honey</li>
+                        <li>1 kg Honey</li>
+                        <li>3 kg Honey</li>
+                        <li>5 kg Honey</li>
+                    </ul>
+                </div>
+
+                <!-- CHIPS -->
+                <div class="card">
+                    <h3>🥔 Gold Chips</h3>
+
+                    <p>
+                        We produce crispy potato chips using selected
+                        potatoes and seasonings.
+                    </p>
+
+                    <h4>Available Sizes</h4>
+
+                    <ul>
+                      <li>30 g potatto chips</li>
+                        <li>65 g Potato Chips</li>
+                        <li>120 g Potato Chips</li>
+                    </ul>
+
+                    <h4>Flavors</h4>
+
+                    <ul>
+                        <li>Onion</li>
+                        <li>Tomato</li>
+                        <li>Peri-peri</li>
+                    </ul>
+                </div>
+
+                <!-- SERVICES -->
+                <div class="card">
+                    <h3>Our Services</h3>
+
+                    <ul>
+                        <li>Honey processing and packaging</li>
+                        <li>Potato chips manufacturing</li>
+                        <li>Quality-controlled production</li>
+                        <li>Wholesale and retail supply</li>
+                        <li>Product distribution</li>
+                        <li>Food safety and hygiene practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="cream">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>📍 Company Location</h3>
+                    <p>Addis Ababa, Ethiopia</p>
+                </div>
+
+                <div class="card">
+                    <h3>🏭 Production Location</h3>
+                    <p>
+                        koyye feche,geran gula<br>
+                        Addis Ababa, Ethiopia
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🏢 Showroom</h3>
+                    <p>
+                        Bole Luky Building<br>
+                        6th Floor<br>
+                        Addis Ababa, Ethiopia
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📞 Contact Information</h3>
+
+                    <p>
+                        Phone:
+                        <a class="contact-link"
+                           href="tel:+251962932130">
+                            +251 962 932 130
+                        </a>
+                    </p>
+
+                    <p>
+                        Email:
+                        <a class="contact-link"
+                           href="mailto:pappyeabsira@gmail.com">
+                            pappyeabsira@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 <span>NUUF TRADING</span>.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
